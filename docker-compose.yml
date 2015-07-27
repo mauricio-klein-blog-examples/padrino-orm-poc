@@ -1,0 +1,9 @@
+padrino:
+  image: ruby
+  volumes:
+    - .:/root/padrino
+  links:
+    - db
+
+db:
+  image: mongo
