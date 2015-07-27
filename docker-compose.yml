@@ -3,7 +3,11 @@ padrino:
   volumes:
     - .:/root/padrino
   links:
-    - db
+    - mongo
+    - postgres
 
-db:
+mongo:
   image: mongo
+
+postgres:
+  image: postgres
