@@ -1,0 +1,22 @@
+# Here, I have 'mongo' pointing to my MongoID database IP.
+# Change this value for your configuration
+development:
+  sessions:
+    default:
+      database: mongoid
+      hosts:
+        - mongo:27017
+
+test:
+  sessions:
+    default:
+      database: mongoid
+      hosts:
+        - mongo:27017
+
+production:
+  sessions:
+    default:
+      database: mongoid
+      hosts:
+        - mongo:27017
